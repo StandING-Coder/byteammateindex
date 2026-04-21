@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>保研搭子人格测试</title>
+    <meta
+      name="description"
+      content="测一测：作为一个保研人，你最需要什么样的保研搭子？12 种保研搭子人格，12 道情境题，找到最适合陪你冲刺的那个人。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+
+      <header class="hero">
+        <p class="eyebrow">BYTI · Baoyan Teammate Index</p>
+        <h1>保研人，你最需要哪一种保研搭子？</h1>
+        <p class="hero-copy">
+          这不是测你像谁，而是测在保研这场大型信息战、材料战、心态战里，
+          你最该把谁拉进你的聊天置顶。
+        </p>
+
+        <div class="hero-actions">
+          <button class="primary-btn" id="start-btn" type="button">开始测试</button>
+          <button class="ghost-btn" id="view-types-btn" type="button">先看人格图鉴</button>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-num">12</span>
+            <span class="stat-label">保研搭子人格</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-num">12</span>
+            <span class="stat-label">情境选择题</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-num">1</span>
+            <span class="stat-label">你的最佳互补搭子</span>
+          </article>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="panel legend-panel" id="legend-panel">
+          <div class="panel-heading">
+            <p class="section-tag">人格图鉴</p>
+            <h2>你可能需要的 12 种保研搭子</h2>
+          </div>
+          <div class="type-grid" id="type-grid"></div>
+        </section>
+
+        <section class="panel quiz-panel hidden" id="quiz-panel">
+          <div class="panel-heading compact">
+            <div>
+              <p class="section-tag">测试进行中</p>
+              <h2 id="question-title">题目</h2>
+            </div>
+            <div class="progress-meta">
+              <span id="progress-text">1 / 12</span>
+            </div>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+
+          <article class="question-card">
+            <p class="question-text" id="question-text"></p>
+            <div class="options" id="options"></div>
+          </article>
+
+          <div class="quiz-actions">
+            <button class="ghost-btn" id="prev-btn" type="button">上一题</button>
+            <button class="ghost-btn" id="restart-btn" type="button">重新开始</button>
+          </div>
+        </section>
+
+        <section class="panel result-panel hidden" id="result-panel">
+          <div class="panel-heading">
+            <p class="section-tag">测试结果</p>
+            <h2>你的命定保研搭子出现了</h2>
+          </div>
+
+          <article class="result-card" id="result-card">
+            <div class="result-badge" id="result-badge"></div>
+            <h3 id="result-name"></h3>
+            <p class="result-subtitle" id="result-subtitle"></p>
+            <p class="result-description" id="result-description"></p>
+
+            <div class="result-columns">
+              <div>
+                <h4>TA 会怎么帮你</h4>
+                <ul class="result-list" id="result-help-list"></ul>
+              </div>
+              <div>
+                <h4>你们的相处方式</h4>
+                <ul class="result-list" id="result-style-list"></ul>
+              </div>
+            </div>
+
+            <blockquote class="result-quote" id="result-quote"></blockquote>
+          </article>
+
+          <div class="share-box">
+            <p class="share-title">分享文案</p>
+            <textarea id="share-text" readonly></textarea>
+            <div class="hero-actions">
+              <button class="primary-btn" id="copy-btn" type="button">复制结果文案</button>
+              <button class="ghost-btn" id="retry-btn" type="button">再测一次</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
